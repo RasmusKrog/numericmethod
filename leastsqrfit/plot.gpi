@@ -1,0 +1,5 @@
+set term png background rgb "white"
+set out 'plot.png'
+plot \
+	 'data' index 0 with errorbars title 'data' \
+	,'data' index 1 with lines title 'fit'

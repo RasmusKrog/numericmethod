@@ -1,0 +1,8 @@
+set term png
+set out "plot.png"
+set size 1,1
+set xlabel "x"
+set ylabel "data"
+plot \
+	"data" index 1 title "data"	\
+	, "data" index 2 with lines title "theory"

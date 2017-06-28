@@ -1,0 +1,10 @@
+set term png
+set out "cplot.png"
+set size 1,1
+set xlabel "x"
+set ylabel "sin(x)"
+plot \
+	"data" index 0 with points title "sinus points" \
+	,"data" using 1:7 index 1 with lines title "cubic interpolation" \
+	,"data" using 1:8 index 1 with lines title "cubic integration" \
+	,"data" using 1:9 index 1 with lines title "cubic derivative"

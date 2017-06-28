@@ -1,0 +1,4 @@
+set term png
+set out "quasi.png"
+set pointsize 0.2
+plot "quasi.dat" not w p pt 7

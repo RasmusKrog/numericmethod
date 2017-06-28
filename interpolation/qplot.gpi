@@ -1,0 +1,10 @@
+set term png
+set out "qplot.png"
+set size 1,1
+set xlabel "x"
+set ylabel "sin(x)"
+plot \
+	"data" index 0 with points title "sinus points" \
+	,"data" using 1:4 index 1 with lines title "quadratic interpolation" \
+	,"data" using 1:5 index 1 with lines title "quadratic integration" \
+	,"data" using 1:6 index 1 with lines title "quadratic derivation"

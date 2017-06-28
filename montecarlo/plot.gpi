@@ -1,0 +1,9 @@
+set term png
+set out "plot.png"
+set size 1,1
+set xlabel "x"
+set ylabel "errors"
+plot \
+	"data" index 0 with points title "errors" \
+	,"data" index 1 with lines title "1/sqrt(x)"
+
